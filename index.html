@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chapter 1-67</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body style="text-align: center;">
+    <h1>Assignment from 1 to 67</h1>
+    <!-- Leep Year -->
+    <div style="text-align: left;">
+        <h2>Check Leep year</h2>
+        <input id="year" type='number' placeholder="enter year">
+        <button onclick="checkLeepYear()">Check Leep Year</button>
+    </div>
+    <!-- Distance Finder -->
+    <div style="text-align: left;">
+        <h2>Distance Converter</h2>
+        <input id="distance" type='number' placeholder="Distance in KM.">
+        <button onclick="convertDistance()">Convert</button>
+    </div>
+    <!-- Link -->
+    <div style="text-align: left; margin: 20px 0;">
+        <a href="#" onclick="showAlert()">Click Me</a>
+    </div>
+    <!-- Phones -->
+    <div style="text-align: left;">
+        <h2>Buy Any Smart Phone</h2>
+        <div
+            style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center; flex-wrap: wrap;">
+            <img onclick="buy()"
+                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.alCjYqqsAPfSzk1KyNYnzQHaFj%26pid%3DApi&f=1"
+                width="250" height="300" style="margin: 10px; object-fit:cover; cursor: pointer;" alt="img not found">
+            <img onclick="buy()"
+                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.jmjf0pgFzbdhAbhiqZ10eAHaGG%26pid%3DApi&f=1"
+                width="250" height="300" style="margin: 10px; cursor: pointer; object-fit: contain;"
+                alt="img not found">
+            <img onclick="buy()"
+                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.GSulOA6LswL1QwE7S9pSYgHaFZ%26pid%3DApi&f=1"
+                width="250" height="300" style="margin: 10px; cursor: pointer; object-fit: cover;" alt="img not found">
+        </div>
+    </div>
+    <!-- Students Records -->
+    <div style="text-align: left;">
+        <h2>Students Records</h2>
+        <table id="table" border="1" width="300">
+            <tr align="center">
+                <th>Index</th>
+                <th>Name</th>
+                <th>Class</th>
+                <th>Action</th>
+            </tr>
+            <tr class="tr" align="center">
+                <td></td>
+                <td>Shahbaz</td>
+                <td>BS-IT</td>
+                <td><Button id="btn" onclick="deleteStudent(event)">Delete</Button></td>
+            </tr>
+            <tr class="tr" align="center">
+                <td></td>
+                <td>Ali</td>
+                <td>BS-English</td>
+                <td><Button onclick="deleteStudent(event)">Delete</Button></td>
+            </tr>
+            <tr class="tr" align="center">
+                <td></td>
+                <td>Zain</td>
+                <td>Graphic Designing</td>
+                <td><Button onclick="deleteStudent(event)">Delete</Button></td>
+            </tr>
+            <tr class="tr" align="center">
+                <td></td>
+                <td>Ahmad</td>
+                <td>BS-CS</td>
+                <td><Button onclick="deleteStudent(event)">Delete</Button></td>
+            </tr>
+        </table>
+    </div>
+    <!-- Changing Image -->
+    <div style="text-align: left;">
+        <h2>Change image on mouseover</h2>
+        <img data='13' onmouseover="changeImage(event)" onmouseout="changeImage(event)" src="13.jpg" width="50%"
+            alt="img not found">
+    </div>
+    <!-- Counter -->
+    <div style="text-align: left;">
+        <h2>Counter increase and Decrease</h2>
+        <div style="width: 300px; text-align: center;">
+            <h1 id="count">0</h1>
+            <button id="pluse" onclick="start(1)">Increase</button>
+            <button id="minus" onclick="start(-1)">Decrease</button>
+        </div>
+    </div>
+    <!-- Signup Form -->
+    <div style="text-align: left;">
+        <h2>Signup form</h2>
+        <div style="display: flex; flex-direction: column; width: 300px; justify-content: center; align-items: center;"
+            method="POST">
+            <label>Name <br /><input type="text" id="name"></label>
+            <label>Email <br /><input type="email" id="email"></label>
+            <label>Country <br /><input type="text" id="country"></label>
+            <label>Password <br /><input type="password" id="password"></label> <br />
+            <button onclick="showData()">Signup</button>
+        </div>
+        <div class="data">
+            <p id="nameData"></p>
+            <p id="emailData"></p>
+            <p id="countryData"></p>
+            <p id="passwordData"></p>
+        </div>
+    </div>
+    <!-- More details -->
+    <div style="text-align: left;">
+        <h2>Items Details</h2>
+        <div
+            style="margin: 5px; padding: 10px; border: 3px dashed gray; box-shadow: 3px 3px 3px #ccc ; width: 300px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <img style="width: 200px;"
+                src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.GTH3Y2smE1Z-ij5EVElJ6QHaHa%26pid%3DApi&f=1"
+                alt="shoe">
+            <p><strong>Price:</strong> 3000</p>
+            <p id="read" onclick="readmore(event)" style="text-decoration: underline; cursor: pointer; color: blue;">
+                Read more</p>
+            <div style="display: none;">
+                <p><strong>Color:</strong> Dark Blue</p>
+                <p><strong>Status:</strong> Available</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    <!-- Student Data in Table -->
+    <div style="text-align: left;">
+        <h2>Student Info</h2>
+        <fieldset style="width: 300px; margin: 5px; padding: 20px 0px;">
+            <legend>Student Data</legend>
+            <div style="display: flex; flex-direction: column; font-size: 1.3rem; width: 300px; justify-content: center; align-items: center;"
+                method="POST">
+                <label>Name <br /><input type="text" id="Sname"></label>
+                <label>Class <br /><input type="text" id="Sclass"></label>
+                <label>Email <br /><input type="email" id="Semail"></label>
+                <label>Country <br /><input type="text" id="Scountry"></label><br />
+                <button id="stdBtn" class="enter" onclick="studentData(event)">Submit</button>
+            </div>
+        </fieldset>
+        <table id="studentTable" width='50%' border="1" style="font-size:1.2rem; margin-left: 5px;">
+            <tr align="center">
+                <th>Name</th>
+                <th>Class</th>
+                <th>Email</th>
+                <th>Country</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </table>
+    </div>
+    <!-- Assignment of DOM(Document Object Model) -->
+    <div style="text-align: left;">
+        <h1> DOM </h1>
+        <div id="form-content" class="content">
+            <label style="display: block;" for="first-name">First Name</label>
+            <input style="display: block;" type="text" id="first-name" />
+            <label style="display: block;" for="last-name">Last Name</label>
+            <input style="display: block;" type="text" id="last-name" />
+            <label style="display: block;" for="Email">Email</label>
+            <input style="display: block;" type="text" id="Email" />
+        </div>
+        <div id="main-content" class="content">
+            <p class="render"> First Name : Alex</p>
+            <p class="render" id="lastName">Last Name: Bank</p>
+            <p class="render"> Email : alexbank@example.com</p>
+            <p class="render"> Country : Pakistan </p>
+            <p class="render"> contact : +92 300 1234567</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
