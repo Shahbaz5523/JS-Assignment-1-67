@@ -1646,6 +1646,32 @@ function editStudent(e){
 }
 // End of Chapter 49 to 52
 
+// Staring of Chapter 52 to 57
+// Creating Functionalty for image model
+let imgContainer = document.getElementById('imagesContaienr');
+let imgSrc = ['./images/others/1.jpg','./images/others/2.jpg','./images/others/3.jpg','./images/others/4.png','./images/others/5.jpg','./images/others/6.jpg','./images/others/7.png','./images/others/8.jpg','./images/others/9.jpg','./images/others/10.jpg','./images/others/11.jpg','./images/others/12.jpg','./images/others/13.jpg','./images/others/14.png','./images/others/15.jpg'];
+for(let i=0;i<imgSrc.length;i++){
+    let img = document.createElement('img');
+    img.src = imgSrc[i];
+    img.setAttribute("class",'img');
+    img.setAttribute("index",i);
+    img.setAttribute('onclick','openImg(event)');
+    imgContainer.appendChild(img);
+}
+function openImg(e){
+    let openingImgSrc = imgSrc[e.target.getAttribute('index')];
+    let model = document.getElementsByClassName('model');
+    let modelImg = document.getElementById('modelImg');
+    modelImg.src = openingImgSrc;
+    console.log(model[0].getAttribute('class'))
+    model[0].classList.add('model-open');
+}
+function closeImg(){
+    let model = document.getElementsByClassName('model');
+    model[0].classList.remove('model-open');
+}
+// End of Chapter 52 to 57
+
 // Starting of chapter 58 to 67 DOM
 // Assignment no 1:
 // i:
