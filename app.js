@@ -1494,20 +1494,24 @@ function inCentimeters(d) {
 
 // Assignment no 10:
 // function withDrawMoney() {
-//     let hundred = 4;
-//     let fifty = 1;
 //     let ten = 2;
+//     let fifty = 1;
+//     let hundred = 4;
 //     let withdraw = +prompt("Enter amount to withdraw! your current balance is RS470: ", 450);
 //     if (withdraw > 480) {
 //         alert("Sorry your current balance is 470;");
-//     } else if (withdraw < 10) {
+//     } else if(withdraw < 10) {
 //         alert("you can withdraw minimum RS10");
-//     } else if (withdraw >= 10 && withdraw <= 480) {
-
+//     } else if(withdraw >= 10 && withdraw <= 470) {
+//         alert("Required notes of 100 is : "+parseInt(withdraw / 100));
+//         alert("Required notes of 50 is : "+parseInt((withdraw % 100)/50));
+//         alert("Required notes of 10 is :"+parseInt(((withdraw % 100)/50)/10));
+//         alert("Amount still remaining is :"+parseInt(((withdraw % 100)/50)%10));
 //     } else {
-//         alert("Sorry Invalid Input");
+//         alert("Sorry Invalid Input.");
 //     }
 // }
+// withDrawMoney();
 // End of the Chapter 38 to 42
 
 // Starting Chapter 43 to 48
